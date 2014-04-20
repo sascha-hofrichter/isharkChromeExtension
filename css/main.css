@@ -1,0 +1,27 @@
+body {
+    background-color: #E8E8E8;
+    font: normal 15px "Trebuchet MS", Arial, sans-serif;
+}
+
+.bd {
+    width: 715px;
+    margin: 25px auto 5px auto;
+    border: 5px solid #DFDFDF;
+    background-color:#fff;
+}
+
+.icon {
+    display: block;
+    width: 304px;
+    height: 140px;
+    background: url('/img/headleft.png') no-repeat;
+    text-decoration: none;
+    float: left;
+}
+
+.headerText {
+    width: 410px;
+    height: 140px;
+    background: url('/img/headright.png') no-repeat;
+    float: left;
+}

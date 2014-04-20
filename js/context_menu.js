@@ -17,7 +17,7 @@ function uploadToIshark(info, tab) {
 
         }).done(function (response) {
             setiSharkImgUrl(response.url);
-            console.log(response.url);
+            chrome.tabs.create({'url': chrome.extension.getURL('success.html'), 'active': true});
         }).fail(function (response, textStatus, errorThrown) {
             if(response.status > 0) {
                 switch (response.status) {
