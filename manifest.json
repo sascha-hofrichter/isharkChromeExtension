@@ -14,6 +14,6 @@
     "name": "iShark",
     "manifest_version": 2,
     "minimum_chrome_version": "20",
-    "permissions": [ "tabs", "contextMenus"],
+    "permissions": [ "tabs", "contextMenus", "http://ishark.dev/"],
     "version": "0.0.1"
 }
