@@ -23,18 +23,18 @@ function uploadToIshark(info, tab) {
                 switch (response.status) {
                     case 422:
                         // url was not set
-                        console.error('no URL to image');
+                        chrome.tabs.create({'url': chrome.extension.getURL('error/422.html'), 'active': true});
                         break;
 
                     default:
                     case 500:
                         // server internal error
-                        console.error('Internal server error');
+                        chrome.tabs.create({'url': chrome.extension.getURL('error/500.html'), 'active': true});
                         break;
                 }
             } else {
                 // have a timeout or server are not available
-                console.error('iShark-Server is not available');
+                chrome.tabs.create({'url': chrome.extension.getURL('error/timeOut.html'), 'active': true});
             }
         });
     }
