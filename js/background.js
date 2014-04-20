@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function onMessage(request, sender, sendResponse) {
-    console.log('onMessage' , request.imageUrl);
+    // save image url into the local storage
+    setOriginalImgUrl(encodeURIComponent(request.imageUrl));
 }
 
